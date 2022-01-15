@@ -15,6 +15,18 @@ Date Accessed: 6-8 January, 2022
 Source URL: https://www.youtube.com/watch?v=XRm0SnUJROU&t=363s
 */
 
+/*
+============================================
+; Title: Assignment 2.3 Data Binding
+; Author: Angular
+; Date: January 15, 2022
+; Modified By: William Talley
+; Description: This program demonstrates the
+;how to bind values to HTML elements in an Angular project.
+;===========================================
+*/
+
+
 
 import { Component } from '@angular/core';
 
@@ -24,5 +36,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  assignment: string = 'Assignment 1.5- Components';
+  isLoggedIn: Boolean = true;
+  assignment: string = 'Assignment Exercise 2.3- Data Binding';
 }
