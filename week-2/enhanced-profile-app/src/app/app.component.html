@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#">WEB425</a>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link" href="#">Contact</a>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <br /><br />
+
+    <h2 style="text-align: center">{{ assignment }}</h2>
+
+  <br /><br />
+
+  <div class="row" *ngIf="isLoggedIn; else showError">
+    <div class="col-lg-4">
+      <app-my-image></app-my-image>
+    </div>
+
+    <div class="col-sm-8">
+      <app-my-details></app-my-details>
+    </div>
+
+
+
+  </div>
+
+  <ng-template #showError>
+
+    <div class="row">
+
+      <div class="col-sm-12">
+
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+
+      </div>
+
+    </div>
+
+  </ng-template>
+</div>
