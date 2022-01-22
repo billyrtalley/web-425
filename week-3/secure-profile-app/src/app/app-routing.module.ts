@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Exercise 3.3- Passing Data to Routes, Part 2 app-module.module.ts
+; Title: Exercise 3.3- Passing Data to Routes, Part 2 app-routing.module.ts
 ; Date: January 22, 2022
 ; Modified By: William Talley
 ; Description: app routing module
