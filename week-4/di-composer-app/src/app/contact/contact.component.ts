@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 4.2- Inversion of Control and Dependency Injection contact.component.ts
-; Date: January 25, 2022
+; Title: Exercise 4.3- Handling Form Events with Observables contact.component.ts
+; Date: January 26, 2022
 ; Modified By: William Talley
 ; Description: contact info page
 ;Source: Professor Richard Krasso. ComposerApp Date: n.d. url:   https://buwebdev.github.io/composer-app/ ,

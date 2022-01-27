@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 4.3- Handling Form Events with Observables app-module.ts
-; Date: January 26, 2022
+; Title: Exercise 4.2- Handling Form Events with Observables app-module.ts
+; Date: January 22, 2022
 ; Modified By: William Talley
 ; Description: app  module file
 ;

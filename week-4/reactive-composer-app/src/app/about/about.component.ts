@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 4.3- Handling Form Events with Observables composer-details.components.ts
-; Date: January 26, 2022
+; Title: Exercise 4.2- Inversion of Control and Dependency Injection composer-details.components.ts
+; Date: January 25, 2022
 ; Modified By: William Talley
 ; Description: about.components file no changes for week 3
 ;

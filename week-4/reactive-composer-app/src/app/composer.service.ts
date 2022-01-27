@@ -1,7 +1,7 @@
 /*
 ============================================
-; Title: Exercise 4.3- Handling Form Events with Observables component.service.ts
-; Date: January 26, 2022
+; Title: Exercise 4.2- Inversion of Control and Dependency Injection component.service.ts
+; Date: January 25, 2022
 ; Modified By: William Talley
 ; Description: component.service file; created with ng g s composer in the terminal window
 ;this replaced composer.class.ts file from the week 3 exercises

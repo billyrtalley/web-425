@@ -1,9 +1,9 @@
 /*
 ============================================
-; Title: Exercise 4.3- Handling Form Events with Observables app-module.ts
-; Date: January 26, 2022
+; Title: Exercise 4.2- Inversion of Control and Dependency Injection app-routing.module.ts
+; Date: January 25, 2022
 ; Modified By: William Talley
-; Description: app  module file
+; Description: app-routing module
 ;
 ;Source: Professor Richard Krasso. ComposerApp Date: n.d. url:   https://buwebdev.github.io/composer-app/ ,
 ;Description: Solution to the exercise; used for reference to check progress of my work.
@@ -15,34 +15,39 @@
 */
 
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { ComposerListComponent } from './composer-list/composer-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
-import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/composer-list',
+    pathMatch: 'full'
+  },
+  {
+    path: 'composer-list',
+    component: ComposerListComponent
+  },
+  {
+    path: 'composer-details/:composerId',
+    component: ComposerDetailsComponent
+  },
+
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  }
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ComposerListComponent,
-    ContactComponent,
-    AboutComponent,
-    ComposerDetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }

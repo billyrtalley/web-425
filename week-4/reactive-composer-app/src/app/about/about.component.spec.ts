@@ -1,9 +1,9 @@
 /*
 ============================================
-; Title: Exercise 4.3- Handling Form Events with Observables composer-list.component.spec.ts
-; Date: January 26, 2022
+; Title: Exercise 4.2- Inversion of Control and Dependency Injection about.component.spec.ts
+; Date: January 25, 2022
 ; Modified By: William Talley
-; Description: composer-list.components spec file
+; Description: about.components spec file
 ;
 ;Source: Professor Richard Krasso. ComposerApp Date: n.d. url:   https://buwebdev.github.io/composer-app/ ,
 ;Description: Solution to the exercise; used for reference to check progress of my work.
@@ -14,23 +14,24 @@
 ;===========================================
 */
 
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComposerListComponent } from './composer-list.component';
+import { AboutComponent } from './about.component';
 
-describe('ComposerListComponent', () => {
-  let component: ComposerListComponent;
-  let fixture: ComponentFixture<ComposerListComponent>;
+describe('AboutComponent', () => {
+  let component: AboutComponent;
+  let fixture: ComponentFixture<AboutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ComposerListComponent ]
+      declarations: [ AboutComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComposerListComponent);
+    fixture = TestBed.createComponent(AboutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
