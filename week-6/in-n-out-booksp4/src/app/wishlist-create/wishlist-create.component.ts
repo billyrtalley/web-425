@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: Assignment 6.2 Output Properties
+; Author: Professor Krasso
+; Date: February 10, 2022
+; Modified By: William Talley
+; Description: in-n-out booksp4 wishlist-create component file
+;===========================================
+*/
+
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { IWishlistItem } from '../wishlist-item.interface';
 

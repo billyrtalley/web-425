@@ -1,10 +1,10 @@
 /*
 ============================================
-; Title: Assignment 5.3 Data Tables
+; Title: Assignment 6.2 Output Properties
 ; Author: Professor Krasso
-; Date: February 5, 2022
+; Date: February 10, 2022
 ; Modified By: William Talley
-; Description: in-n-out booksp2 about component page
+; Description: in-n-out booksp4 about component page
 ;===========================================
 */
 

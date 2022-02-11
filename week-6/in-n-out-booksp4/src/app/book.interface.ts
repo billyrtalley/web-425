@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Assignment 5.4 Dialogs
+; Title: Assignment 6.2 Output Properties
 ; Author: Professor Krasso
 ; Date: February 5, 2022
 ; Modified By: William Talley

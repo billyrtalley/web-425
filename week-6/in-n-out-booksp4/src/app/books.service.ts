@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: Assignment 5.4 Dialogs
+; Title: Assignment 6.2 Output Properties
 ; Author: Professor Krasso
-; Date: February 6, 2022
+; Date: February 10, 2022
 ; Modified By: William Talley
 ; Description: in-n-out booksp3 books.service.ts file; IBooks array and getBooks and getBook functions
 ;===========================================
