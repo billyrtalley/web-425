@@ -20,7 +20,7 @@ export class AppComponent {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Exercise 6.2- Input/Output Properties Part 1'
+    this.assignment = 'Exercise 6.2- Input/Output Properties Part 1';
   }
 
 }
