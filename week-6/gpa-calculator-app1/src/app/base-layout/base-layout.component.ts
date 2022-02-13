@@ -20,7 +20,7 @@ export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Exercise 6.3- Layouts';
+    this.assignment = 'Assignment 6.4- Input Properties';
   }
 
   ngOnInit(): void {
