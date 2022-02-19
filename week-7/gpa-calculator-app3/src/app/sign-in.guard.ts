@@ -30,9 +30,11 @@ export class SignInGuard implements CanActivate {
       const sessionUser = this.cookieService.get('session_user');
 
       if (sessionUser) {
+        console.log('true')
         return true;
       } else {
         this.router.navigate(['/session/sign-in']);
+        console.log('false')
         return false;
       }
   }
