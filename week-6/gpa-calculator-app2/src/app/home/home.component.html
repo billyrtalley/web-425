@@ -8,6 +8,11 @@
         <form fxLayout="column" fxLayoutGap="20px">
           <mat-form-field fxFlex appearance="fill">
             <mat-label>Course</mat-label>
+            <input type="text" name="txtCourse" id="txtCourse" matInput [(ngModel)]="transcriptEntry.course" />
+          </mat-form-field>
+
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Grade</mat-label>
             <mat-select [(ngModel)]="transcriptEntry.grade" name="selectGrade">
               <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
                 {{ grade }}
