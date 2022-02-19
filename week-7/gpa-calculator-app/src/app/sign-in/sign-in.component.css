@@ -10,6 +10,6 @@
   background-color: #FFD2D2;
 }
 
-.sign-in-container > mat-card-title, mat-card-subtitle {
+.signin-container > mat-card-title, mat-card-subtitle {
   text-align: center;
 }

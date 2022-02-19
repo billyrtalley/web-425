@@ -17,7 +17,7 @@
         </div>
 <!-- Additional week 7 error message to notify user the student id must be a number -->
 
-        <div *ngIf="form.['studentId'].errors && form.['studentId'].touched">
+        <div *ngIf="form.studentId.errors && form.studentId.touched">
           <div class="msg-error">Student Id must be a numeric value</div>
         </div>
 

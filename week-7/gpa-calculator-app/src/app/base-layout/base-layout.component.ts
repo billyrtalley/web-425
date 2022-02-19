@@ -1,11 +1,10 @@
 /*
 ============================================
-; Title: Exercise 7.2- Reactive Forms
+; Title: Exercise 7.3 Form Validation
 ; Author: Professor Krasso
-; Date: February 15, 2022
+; Date: February 19, 2022
 ; Modified By: William Talley
-; Description: GPA Calculator App pt 3 base-layout component ts file
-;adding sign out functionality
+; Description: GPA Calculator App base-layout component ts file
 ;===========================================
 */
 

@@ -1,15 +1,17 @@
 /*
 ============================================
-; Title: Exercise 7.2 Reactive Forms
+; Title: Exercise 7.3 Form Validation
 ; Author: Professor Krasso
-; Date: February 15, 2022
+; Date: February 19, 2022
 ; Modified By: William Talley
-; Description: GPA Calculator App pt 2 home component file
+; Description: GPA Calculator App home component file
 ;===========================================
 */
 
+
 import { Component, OnInit } from '@angular/core';
 import { ITranscript } from '../transcript.interface';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -24,17 +26,33 @@ export class HomeComponent implements OnInit {
   transcriptEntries: Array<ITranscript> = []
 //variable for the GPA
   gpaTotal: number = 0;
+  //variable for FormGroup; added for 7.3
+  transcriptForm: FormGroup;
 
-  constructor() {
-    this.transcriptEntry = {} as ITranscript;
+  constructor(private fb: FormBuilder) {
+
    }
 
+
+// use the FormBuilder to build a new FormGroup with two FormControls: course and grade
   ngOnInit(): void {
+    this.transcriptForm = this.fb.group({
+      course: ['', Validators.required],
+      grade: ['', Validators.required]
+    })
   }
-//function to add the grade to the transcripts array
-  saveEntry() {
-    this.transcriptEntries.push(this.transcriptEntry)
-    this.transcriptEntry = {} as ITranscript;
+
+
+  get form() { return this.transcriptForm.controls; }
+
+//revised previous saveEntry function to onSubmit with a parameter called event
+onSubmit(event: { currentTarget: { reset: () => void } }) {
+    this.transcriptEntries.push({
+      course: this.form.course.value,
+      grade: this.form.grade.value
+    });
+
+   event.currentTarget.reset();
   }
 
  //a for loop and iterate over the transcriptEntries array; use list in blackboard for scale
