@@ -5,6 +5,7 @@
 ; Date: February 12, 2022
 ; Modified By: William Talley
 ; Description: GPA Calculator App pt 2 grade-summary component ts file
+; fixed courses functionality
 ;===========================================
 */
 
