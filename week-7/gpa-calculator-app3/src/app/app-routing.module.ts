@@ -1,10 +1,10 @@
 /*
 ============================================
-; Title: Assignment 6.4 Input Properties
+; Title: Assignment 7.2 Reactive Forms
 ; Author: Professor Krasso
-; Date: February 12, 2022
+; Date: February 15, 2022
 ; Modified By: William Talley
-; Description: GPA Calculator App pt 2 app routing module
+; Description: GPA Calculator App pt 3 app routing module
 ; set up child routes
 ;===========================================
 */
