@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25;
+}
+
+.grid-container_item {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container_ahref {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grid-container_ahref:hover {
+  text-decoration: underline;
+}
+
+
