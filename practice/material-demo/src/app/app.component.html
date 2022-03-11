@@ -1,0 +1,164 @@
+<mat-toolbar color="primary" class="navbar">
+  <div>Angular Material Cheat Sheet</div>
+  <div>
+    <span class="nav-span">Home</span>
+    <span class="nav-span">About</span>
+    <span class="nav-span">Contact</span>
+  </div>
+</mat-toolbar>
+<br /><br />
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+  <mat-sidenav-content>Main
+    <button mat-raised-button (click)="opened=!opened" color="accent">Toggle Opened</button>
+    <button mat-raised-button (click)="sidenav.open()" color="primary">Open</button>
+    <button mat-raised-button (click)="sidenav.close()" color="accent">close</button>
+<!-- Method works well for when you have a hamburger menu; I like this method -->
+    <button mat-fab (click)="sidenav.toggle()" color="primary">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- Using div classes to set the size to type -->
+<br /><br />
+<div class="mat-display-4">This is display 4</div>
+<div class="mat-display-3">This is display 3</div>
+<div class="mat-display-2">This is display 2</div>
+<div class="mat-display-1">This is display 1</div>
+<br />
+
+<div class="mat-headline">This is a heading class for h1 using div class mat-headline</div>
+<div class="mat-title">This is a heading class for h2 using div class mat-title</div>
+<div class="mat-subheading-2">This is a heading class for h3 using div class mat-subheading-2</div>
+<div class="mat-subheading-1">This is a heading class for h4 using div class mat-subheading-1</div>
+<br />
+
+<div class="mat-body-1">This is body text using div class mat-body-1</div>
+<div class="mat-body-2">This is bold body text using div class mat-body-2</div>
+<div class="mat-caption">This is caption text using div class mat-caption</div>
+<br />
+
+<div class="mat-typography">
+  <h1>This is a heading h1 using div class mat-typography</h1>
+  <h2>This is a heading h2 using div class mat-typography</h2>
+  <h3>This is a heading h3 using div class mat-typography</h3>
+  <h4>This is a heading h4 using div class mat-typography</h4>
+</div>
+<br /><br />
+
+<!-- Buttons  -->
+<div>
+  <button mat-button>mat button</button>
+
+  <button mat-raised-button>raised button</button>
+
+  <button mat-flat-button>flat button</button>
+
+  <button mat-stroked-button>stroked button</button>
+
+</div>
+<br /><br />
+<div>
+  <button mat-icon-button>mat icon button</button>
+  <br /><br />
+  <button mat-fab>mat fab button</button>
+  <br /><br />
+  <button mat-mini-fab>mini fab button</button>
+</div>
+<br /><br />
+<div>
+  <button color="primary" mat-button>primary color</button>
+  <button color="accent" mat-button>accent color</button>
+  <button color="warn"  mat-button>warn color</button>
+  <button color="primary" mat-raised-button>primary color</button>
+  <button color="accent" mat-raised-button>accent color</button>
+  <button color="warn"  mat-raised-button>warn color</button>
+</div>
+<br /><br />
+
+<!-- This section shows how to use icons as buttons -->
+<div class>
+  <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+    <mat-icon>open_in_new</mat-icon>
+  </button>
+</div>
+<br /><br />
+
+<!-- Toggle Buttons -->
+<div>
+  <mat-button-toggle #toggleBtn checked>Toggle</mat-button-toggle>
+    {{ toggleBtn.checked }}
+</div>
+<br /><br />
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+    {{toggleGroup.value }}
+</div>
+<br /><br />
+<div>
+  <!-- Get the text for the icon from material design; these aren't being used as buttons in this example  -->
+  <mat-icon>menu</mat-icon>
+  <mat-icon>home</mat-icon>
+  <mat-icon>search</mat-icon>
+  <mat-icon color="primary">menu</mat-icon>
+  <mat-icon color="accent" >home</mat-icon>
+  <mat-icon color="warn">search</mat-icon>
+</div>
+<br /><br />
+
+
+<!-- This sections shows how to use badges for pop-up notifications; elements also in app.component.ts for demo purposes -->
+<div class="notify">
+  <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="4" matBadgePosition="below before">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="3" matBadgePosition="below after">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="2" matBadgePosition="above before">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="4" matBadgeColor="primary">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="3" matBadgeColor="accent">Notifications</span>
+</div>
+
+<div class="notify">
+  <span matBadge="2" matBadgeColor="warn" matBadgeOverlap="false">Notifications</span>
+</div>
+<br /><br />
+
+<!-- This sections shows how to use a progress spinner; elements also in app.component.ts for demo purposes -->
+
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
+<br /><br />
+<button mat-raised-button color="primary" (click)="loadData()">Click Me</button>
+
+
+

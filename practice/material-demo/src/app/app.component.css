@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+
+mat-icon {
+  margin-right: 3rem;
+}
+
+.notify {
+  margin: 3rem;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-span {
+  padding-right: 1rem;
+  font-size: .875rem;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav, mat-side-content {
+  padding: 16px;
+}
+
+mat-sidenav {
+  background-color: #FA8A88;
+  width: 200px;
+}
