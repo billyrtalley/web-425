@@ -159,6 +159,26 @@
 <mat-spinner *ngIf="showSpinner"></mat-spinner>
 <br /><br />
 <button mat-raised-button color="primary" (click)="loadData()">Click Me</button>
+<br /><br />
 
+<!-- This section shows how to use menus in material -->
+<!-- Need to associate the menu to the button element; the mat-menu wont appear on its own
+; First on mat menu component add template reference variable and assign it the mat menu directive #appMenu="matMenu"
+; Second link the button (ln 174) to the template reference [matMenuTriggerFor]="appMenu"
+-->
+<!-- <mat-menu #appMenu="matMenu">
+  <button mat-flat-button mat-menu-item color="accent">FrontEnd</button>
+  <button mat-flat-button mat-menu-item color="accent">BackEnd</button>
+</mat-menu>
 
+<button mat-flat-button [matMenuTriggerFor]="appMenu"  color="primary">Menu</button>
+<br /><br /> -->
+
+<!-- Create a nested menu -->
+<!-- This submenu is for choices related to the FrontEnd button in the menu above(ln 170) -->
+<!-- <mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>Vue</button>
+</mat-menu> -->
 

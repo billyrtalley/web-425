@@ -14,6 +14,8 @@ export class AppComponent {
 //added this for the first method of opening and closing sidenav; its the first button
   opened= false;
 
+
+
 //added showSpinner and the load data elements to simulate the button loading data and the spinner appears
   loadData() {
     this.showSpinner = true;
